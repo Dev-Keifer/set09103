@@ -1,13 +1,5 @@
-body {font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight:700; margin: 0; padding: 0;}
-#page{ max-width:1200px; margin: 0 auto; position: relative;
-overflow:hidden;}
+#page{ max-width:1200px; margin: 0 auto; position: relative;}
 
-/* Text */
-h1 { margin: 0 0 0.5em 0; font-size: 2.0em; font-weight: 500;}
-h2 { margin: 0 0 0.5em 0; font-size: 2.0em; font-weight: 300;}
-h3 { margin: 0 0 0.5em 0; font-size: 2.4em; font-weight: 300;}
-	
-/* Header*/
 .header img {
   float: left;
   width: 110px;
@@ -51,7 +43,6 @@ h3 { margin: 0 0 0.5em 0; font-size: 2.4em; font-weight: 300;}
   font-size: 17px;
 }
 
-/* NAVIGATION */
 .nav {
 	background-color:#83c5e8;
 	position: sticky;
@@ -60,7 +51,6 @@ h3 { margin: 0 0 0.5em 0; font-size: 2.4em; font-weight: 300;}
 	
 	width: 1200px;	
 }
-
 .nav::after {content:''; display: block; clear: both;} 
 
 .nav ul {list-style: none; margin: 0; padding: 0px;}
@@ -115,18 +105,10 @@ h3 { margin: 0 0 0.5em 0; font-size: 2.4em; font-weight: 300;}
 	
 	
 }
-.pagetitle{
-position:static;
-margin-top:20px;
-	
-	
-	
-}
-/* RELEASES SECTION HOME PAGE HOME PAGE */
 .container {
 margin-bottom:100px;
 margin-top:50px;
-	
+
 }
 
 .release1 {
@@ -140,7 +122,7 @@ margin-top:50px;
 	float:left;
 	width:100px;
 	height:100px;
-	
+
 }
 
 .release2 {
@@ -154,8 +136,8 @@ margin-top:50px;
 	float:left;
 	width:100px;
 	height:100px;
-	
-	
+
+
 }
 .release3 {
 	position:static;
@@ -168,7 +150,7 @@ margin-top:50px;
 	float:left;
 	width:100px;
 	height:100px;
-	
+
 }
 .release4 {
 	position:static;
@@ -181,7 +163,7 @@ margin-top:50px;
 	float:left;
 	width:100px;
 	height:100px;
-	
+
 }
 .release5 {
 	position:static;
@@ -194,7 +176,7 @@ margin-top:50px;
 	float:left;
 	width:100px;
 	height:100px;
-	
+
 }
 
 .release6 {
@@ -208,7 +190,7 @@ margin-top:50px;
 	float:left;
 	width:100px;
 	height:100px;
-	
+
 }
 .release7 {
 	position:static;
@@ -221,10 +203,8 @@ margin-top:50px;
 	float:left;
 	width:100px;
 	height:100px;
-	
+
 }
-
-
 /* SOFTWARE PAGE SOFTWARE PAGESOFTWARE PAGESOFTWARE PAGESOFTWARE PAGESOFTWARE PAGESOFTWARE PAGE */
 .column {
   float: left;
@@ -249,57 +229,3 @@ margin-top:50px;
   margin-left: auto;
   margin-right: auto;
 }
-
-/*  Footer */
-
-footer { 
-    padding:20px;
-	margin-top:100px;
-	color:#83c5e8;
-	background-color:#ffffff;
-	text-align: center;	
-	font-size: .8em;
-	position:fixed;
-	bottom: 0;
-	width:1200px;
-}
-
-footer a:visited { color: #777; }
-footer a:hover { color: #e80000; }
-
-/* media queries*/
-@media (max-width:900px){
-.column {
-    width: 100%;
-  }	
-	
-	
-	
-}
-
-@media (max-width:690px) {
- .nav {
-	background-color:#83c5e8;
-	position: sticky;
-	margin-top:20px;
-	margin-left:-140px;
-	float:left;
-	
-	width: 690px;	
-}
- .nav ul li a {
-	display: inline-block;
-	color: #000000;
-	padding: 5px 5px;
-	text-decoration: none;
-	width: 70px;
-	position: relative;
-	margin-left:1px;
-	margin-right:1px;
-	float:left;
-}
-footer {
-	width:690px;
-}
-}
-

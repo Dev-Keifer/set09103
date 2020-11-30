@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Web Dev</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+  <body>
+  <div id="page"> <!-- used to set max width of the page -->
+    <header>
+	    <img src="/static/img/Logo.png" alt="logo"> 
+  <h3>My Web Dev</h3>
+  <div class="social"> <a href="https://twitter.com">  <img src="/static/img/twitter.png" alt="twitter"/> </a> </div>
+  <div class="social1">  <img src="img/youtube.png" alt="twitter"/>  </div>
+  <div class="social2">  <img src="img/tripadvisor.jpg" alt="twitter"/>  </div>  
+  <!-- add search bar and login button -->
+  <input type="text" placeholder="Search..">
+        
+		</header>
+        
+          <div class="nav">
+		  <ul>
+		  
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('software') }}">Software</a>
+			<ul>
+			<li><a href="{{ url_for('cms') }}">CMS</a></li>
+			<li><a href="{{ url_for('text') }}">Text Editors</a></li>
+			<li><a href="{{ url_for('design') }}">Design</a></li>
+			<li><a href="{{ url_for('database') }}">Database</a></li>
+			</ul>
+			</li>
+			<li><a href="{{ url_for('tools') }}">Tools</a>
+			<ul>
+			<li><a href="{{ url_for('testing') }}">Testing</a></li>
+			<li><a href="{{ url_for('hosting') }}">Hosting</a></li>
+			<li><a href="{{ url_for('security') }}">Security</a></li>
+			</ul>
+			</li>
+			<li><a href="{{ url_for('resources') }}">Resources</a>
+			<ul>
+			<li><a href="{{ url_for('images') }}">Images</a></li>
+			<li><a href="{{ url_for('video') }}">Video</a></li>
+			<li><a href="{{ url_for('domain') }}">Domain Registars</a></li>
+			<li><a href="{{ url_for('learn') }}">Learn to Code</a></li>
+			</ul>
+			</li>
+			<li><a href="{{ url_for('contact') }}">Contact</a></li>
+          </ul>
+		  
+		  </div>
+        
+      
+    
+	<div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+	
+	</div>
+  </body>
+</html>
