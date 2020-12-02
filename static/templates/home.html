@@ -1,75 +1,15 @@
-<!DOCTYPE HTML><!-- document type -->
-<html><!-- main html element -->
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- declaration of text/html with a character set of UTF-8 -->
-<meta name="viewport" content="width=device-width, initial-scale=1"><!-- meta tag defines the width of the device and initial scale -->
-<title>My Web Dev</title>
-<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-<!-- Load an icon library to show a hamburger menu (bars) on small screens  RESPONSIVE NAV-->
-
-
-</head>
-
-<body>
-<div id="page"> <!-- used to set max width of the page -->
-
-
-
-<header>
-<div class="header">
-  <img src="img/bkb_logo2.png" alt="logo" />
-  <h3>My Web Dev</h3>
-  <div class="social"> <a href="https://twitter.com">  <img src="img/twitter.png" alt="twitter"/> </a> </div>
-  <div class="social1">  <img src="img/youtube.png" alt="twitter"/>  </div>
-  <div class="social2">  <img src="img/tripadvisor.jpg" alt="twitter"/>  </div>  
-  <!-- add search bar and login button -->
-  <input type="text" placeholder="Search..">
-  
-</div>
-
-
-</header>
-
-<div class="nav">
-
-  
-  
-<ul>
-	<li><a title="Home" href="home.html">Home</a></li>	
-	<li><a title="Software" href="software.html">Software</a> 
-	<ul>	
-	<li><a title="CMS" href="cms.html">CMS</a></li>
-	<li><a title="Text Editor" href="editor.html">Text Editors</a></li>
-	<li><a title="Design" href="design.html">Design</a></li>
-	<li><a title="Database" href="database.html">Database</a></li>
-	</ul>
-	</li>
-	<li><a title="Tools" href="tools.html">Tools</a>
-	<ul>
-	<li><a title="Testing" href="testing.html">Testing</a></li>
-	<li><a title="Hosting" href="hosting.html">Hosting</a></li>
-	<li><a title="Security" href="security.html">Security</a></li>
-	</ul>
-	</li>
-	<li><a title="Resources" href="resources.html">Resources</a>
-	<ul>
-	<li><a title="Images" href="images.html">Images</a></li>
-	<li><a title="Video" href="video.html">Video</a></li>
-	<li><a title="Domain Registars" href="domain.html">Domain Registars</a></li>
-	<li><a title="Learn to Code" href="learn.html">Learn to Code</a></li>
-	</ul>
-	</li>
-	<li><a title="About" href="about.html">About</a></li>
-	<li><a title="Contact" href="contact.html">Contact</a></li>
-	</ul>	
-</div>
+<!DOCTYPE html>
+<html>
+  <body>
+  {% extends "layout.html" %}
+  {% block content %}
 <div class="pagetitle">
 <h2 style="text-align:center;">  Latest Releases </h2>
 </div>
 
 <div class="container">
 <div class="release1">
-<img src="img/WordPress.png" alt="logo"/>
+<img src="{{url_for('static', filename = 'WordPress.png')}}">
 <div>
 <h1> Wordpress V 1.4.3 </h1>
 <p> The latest release for Wordpress is here! <a href="#">Click here </a> for the release notes </p>
@@ -132,21 +72,10 @@
 </div>
 
 
+   {% endblock %}
+ 
 
 
 
-
-
-
-</div>
-<footer>
-<a title="Copyright"> My Web Dev, Copyright &copy; 2018</a>
-	 <a title= "Privacy Policy" href="#">Privacy Policy</a>
-	 <a title= "Terms of Service" href="#">Terms of Service</a>
-
-
-</footer>
-
-
-</body>
+  </body>
 </html>

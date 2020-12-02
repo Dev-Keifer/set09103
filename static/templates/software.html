@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+   {% extends "layout.html" %}
+   {% block content %}
+   <div class="pagetitle">
+<h1 style="text-align:center;">  Software Categories </h1>
+</div>
+
+<div class="row">
+
+	<div class="column">
+	<a href="/cms/"><img alt="cms" src="img/cms.png"></a>
+                    <h2 style="text-align:center;">Content Management Systems</h2>
+                  <p style="text-align:center;"> Create a fully functioning website wihtout any coding required! </p>	
+	</div>
+	
+	<div class="column">
+	<a href="/text/"><img alt="text editors" src="img/text.png"></a>
+                    <h2 style="text-align:center;">Text Editors</h2>
+                  <p style="text-align:center;"> Compare the latest text editors in the business today. Find one that suits your coding needs. </p>
+	</div>
+	
+    <div class="column">
+	<a href="/design/"><img alt="design" src="img/design.png"></a>
+                    <h2 style="text-align:center;">Deisgn</h2>
+                  <p style="text-align:center;"> Check out software related to design. Find your perfect software to match your creativity. </p>
+	</div>
+	
+    <div class="column">
+	<a href="/database/"><img alt="database" src="img/database.png"></a>
+                    <h2 style="text-align:center;">Databases</h2>
+                  <p style="text-align:center;"> Find the ideal software uesd to create and manage databases. </p>
+	</div>
+</div>
+   {% endblock %}
+  </body>
+</html>
